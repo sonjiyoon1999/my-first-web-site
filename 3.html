@@ -5,16 +5,53 @@
     <meta charset="utf-8">
 
     <style>
+        body {
+            margin: 0;
+        }
+        #active {
+            color: gray;
+        }
+
+        .saw {
+            color: gray;
+        }
+
+        a {
+            color: black; 
+            text-decoration: none;   
+        }
+
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 30px;
+        }
+
+         #grid > ol {
+             border-right: 1px solid gray;
+             width: 60px;
+             margin: 0;
+             padding: 30px 40px 0 60px;
+             font-size: 20px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        
         .tag-list {
             list-style: none;
-            padding-left: 40;
-            margin-left: 0;
+            padding: 0;
+            margin: 0;
             counter-reset: tag;
         }
 
         .tag-list li {
             counter-increment: tag;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .tag-list li::before {
@@ -31,45 +68,51 @@
 
         .tag-list li:nth-child(11),
         .tag-list li:nth-child(15) {
-             margin-top: 20px;
+             margin-top: 30px;
         }
 
-        .tag-list-title {
-             margin-left: 40px;
+        .tag-list input[type="checkbox"] {
+             margin-right: 20px;
+             vertical-align: middle;
         }
+
     </style>
 
 <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <Ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">TAG</a></li>
-    </Ol>
+    <h1><a href="index.html">SON.WEB</a></h1>
+    <div id="grid">
+        <Ol>
+            <li><a href="1.html"class="saw">HTML</a></li>
+            <li><a href="2.html"class="saw">CSS</a></li>
+            <li><a href="3.html"class="saw">TAG</a></li>
+        </Ol>
 
-    <h2 class="tag-list-title">HTML TAG</h2>
+            <div>
+                <h2 class="tag-list-title">TAG 용어 정리</h2>
+                <ol class="tag-list">
+                    <li><input type="checkbox"><span><strong>&lt;strong&gt;블라블라&lt;/stong&gt;</strong></span> = 굵게</li>
+                    <li><input type="checkbox"><span><strong>&lt;u&gt;블라블라&lt;/u&gt;</strong></span> = 밑줄</li>
+                    <li><input type="checkbox"><span><strong>&lt;h1&gt;블라블라&lt;/h1&gt;</strong></span> = 제목, 줄바꿈 (1~6 까지 있음)</li>
+                    <li><input type="checkbox"><span><strong>&lt;br&gt;</strong></span> = 줄 바꿈</li>
+                    <li><input type="checkbox"><span><strong>&lt;p&gt;&lt;/p&gt;</strong></span> = 단락 나누기</li>
+                    <li><input type="checkbox"><span><strong>&lt;img src=".jpg"width="450"&gt;</strong></span> = 원하는 크기로 이미지 넣기</li>
+                    <li><input type="checkbox"><span><strong>&lt;li&gt;&lt;/li&gt;</strong></span> = 목차</li>
+                    <li><input type="checkbox"><span><strong>&lt;ol&gt;&lt;/ol&gt;</strong></span> = 목차 숫자로 바꾸기</li>
+                    <li><input type="checkbox"><span><strong>&lt;title&gt;&lt;/title&gt;</strong></span> = 링크 제목</li>
+                    <li><input type="checkbox"><span><strong>&lt;meta charest="utf8"&gt;</strong></span> = utf8 브라우저로 항상 열게해라.(한국어지원)</li>
 
-    <ol class="tag-list">
-        <li><span><strong>&lt;strong&gt;블라블라&lt;/stong&gt;</strong></span> = 굵게</li>
-        <li><span><strong>&lt;u&gt;블라블라&lt;/u&gt;</strong></span> = 밑줄</li>
-        <li><span><strong>&lt;h1&gt;블라블라&lt;/h1&gt;</strong></span> = 제목, 줄바꿈 (1~6 까지 있음)</li>
-        <li><span><strong>&lt;br&gt;</strong></span> = 줄 바꿈</li>
-        <li><span><strong>&lt;p&gt;&lt;/p&gt;</strong></span> = 단락 나누기</li>
-        <li><span><strong>&lt;img src=".jpg"width="450"&gt;</strong></span> = 원하는 크기로 이미지 넣기</li>
-        <li><span><strong>&lt;li&gt;&lt;/li&gt;</strong></span> = 목차</li>
-        <li><span><strong>&lt;ol&gt;&lt;/ol&gt;</strong></span> = 목차 숫자로 바꾸기</li>
-        <li><span><strong>&lt;title&gt;&lt;/title&gt;</strong></span> = 링크 제목</li>
-        <li><span><strong>&lt;meta charest="utf8"&gt;</strong></span> = utf8 브라우저로 항상 열게해라.(한국어지원)</li>
+                    <li><input type="checkbox"><span><strong>&lt;head&gt;&lt;/head&gt;</strong></span> = 타이틀 부분 묶기</li>
+                    <li><input type="checkbox"><span><strong>&lt;body&gt;&lt;/body&gt;</strong></span> = 본문 묶기</li>
+                    <li><input type="checkbox"><span><strong>&lt;html&gt;&lt;/html&gt;</strong></span> = 전체 묶기</li>
+                    <li><input type="checkbox"><span><strong>&lt;div&gt;&lt;/div&gt;</strong></span> = 그냥 묶기</li>
 
-        <li><span><strong>&lt;head&gt;&lt;/head&gt;</strong></span> = 타이틀 부분 묶기</li>
-        <li><span><strong>&lt;body&gt;&lt;/body&gt;</strong></span> = 본문 묶기</li>
-        <li><span><strong>&lt;html&gt;&lt;/html&gt;</strong></span> = 전체 묶기</li>
-        <li><span><strong>&lt;!DOCTYPE html&gt;</strong></span> = 작성된 코딩</li>
-
-        <li><span><strong>&lt;a&gt;&lt;/a&gt;</strong></span> = 링크</li>
-        <li><span><strong>href="링크주소"</strong></span> = 링크 삽입</li>
-        <li><span><strong>title="링크 툴팁명"</strong></span> = 링크 툴팁 설명</li>
-    </ol>
- 
+                    <li><input type="checkbox"><span><strong>&lt;!DOCTYPE html&gt;</strong></span> = 작성된 코딩</li>
+                    <li><input type="checkbox"><span><strong>&lt;a&gt;&lt;/a&gt;</strong></span> = 링크</li>
+                    <li><input type="checkbox"><span><strong>href="링크주소"</strong></span> = 링크 삽입</li>
+                    <li><input type="checkbox"><span><strong>title="링크 툴팁명"</strong></span> = 링크 툴팁 설명</li>
+                    <li><input type="checkbox"><span><strong>&lt;!--  --&gt;</strong></span> = 태그 무시</li>
+                </ol>
+            </div>
+      </div>
 </body>
 </html>

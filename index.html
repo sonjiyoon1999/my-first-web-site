@@ -2,22 +2,78 @@
 <html>
 <head>
     <title>WEB1 - html</title>
-    <meta charest="utf8">
+    <meta charset="utf8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media(max-width: 800px) {
+            #grid {
+                display: block;
+            }
+            ol {
+                border-right: none;
+            }
+            h1 {
+                border-bottom: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <Ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">TAG</a></li>
-    </Ol>
+    <h1><a href="index.html">SON.WEB</a></h1>
+    <div id="grid">
+        <Ol>
+            <li><a href="1.html" class="saw">HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html" class="saw">TAG</a></li>
+        </Ol>
 
-    <h2>HTML이란 무엇인가?</h2>
-    <p><a href="https://www.w3schools.com/tags/default.asp" title="HTML 태그정리"><u>웹사이트</u> 모습을 기술하기 위한 마크업 <strong>언어</strong>.</a></p>
+            <div>
+                <h2>HTML란 무엇인가?</h2>
+                <p><u>웹사이트</u> 모습을 기술하기 위한 마크업 <strong>언어</strong>.</p>
 
-    <p>프로그래밍 언어가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나 서식 같은 것을 포함한다. 보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다. 웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.</p>
+                <p>프로그래밍 언어가 아니라 마크업 정보를 표현하는 마크업 언어로 문서의 내용 이외의 문서의 구조나 서식 같은 것을 포함한다. 보면 알겠지만 애초에 이름 HTML의 ML이 마크업 언어라는 뜻이다. 웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서다.</p>
 
-    <img src="Coding.jpg" width="450">
+                <img src="Coding.jpg" width="450">
+            </div>
+    </div>
+        
+    <p>
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-iftwsdds1o.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>    
+
+    <p>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6af277085bc9463c448d3078/1k71i1uln';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </p>
 </body>
 </html>
