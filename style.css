@@ -17,13 +17,18 @@
         h1 {
             font-size: 80px;
             text-align: center;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid Pink;
             margin:0;
             padding: 30px;
         }
 
+        h1 a {
+            color: rgb(255, 110, 134);
+        }
+
         ol {
-            border-right: 1px solid gray;
+            border-right: 1px solid Pink;
+            min-height: 1000px;
             width: 60px;
             margin: 0;
             padding: 40px;
@@ -35,6 +40,7 @@
          #grid {
             display: grid;
             grid-template-columns: 200px 1fr;
+            border-bottom: 1px solid pink;
         }
 
                 @media(max-width: 800px) {
